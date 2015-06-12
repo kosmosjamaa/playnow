@@ -7,8 +7,8 @@ $(window).load(function() {
 	$(".actions").each(function(i){
 		var albumgroup = [];
 		var m = $(this).closest(".data");
-		var album = $(m).find(".title").text();
-		var artist = $(m).find(".artist").text();
+		var album = encodeURIComponent($(m).find(".title").text().replace(':', ''));
+		var artist = encodeURIComponent($(m).find(".artist").text().replace(':', ''));
 		var btnbox = "adfi4dasdasd"+i;
 		$(m).addClass(btnbox);
 		albumgroup[0]=artist;
