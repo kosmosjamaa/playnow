@@ -18,6 +18,12 @@
       "matches": [ "*://*.boomkat.com/*" ],
       "run_at": "document_idle"
    } ],
+    "content_scripts": [ {
+      "js": [ "js/jq.js", "js/juno.js" ],
+       "css": [ "css/s.css"],
+      "matches": [ "*://*.juno.co.uk/*" ],
+      "run_at": "document_idle"
+   } ],
   "permissions": [
     "tabs"
     ]
