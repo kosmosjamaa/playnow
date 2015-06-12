@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Play now button",
+  "description": "Adds play buttons to streaming stations",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+   "background": {
+      "scripts": [ "js/jq.js" ]
+   },
+   
+   "content_scripts": [ {
+      "js": [ "js/jq.js", "js/boomkat.js" ],
+       "css": [ "css/s.css"],
+      "matches": [ "*://*.boomkat.com/*" ],
+      "run_at": "document_idle"
+   } ],
+  "permissions": [
+    "tabs"
+    ]
+}
