@@ -39,6 +39,10 @@
      {
       "js": [  "js/discogs.js" ],
       "matches": [ "*://*.discogs.com/*" ]
+   } ,
+     {
+      "js": [  "js/quietus.js" ],
+      "matches": [ "*://*.thequietus.com/*" ]
    }  
    ],
   "permissions": [
