@@ -43,6 +43,11 @@
      {
       "js": [  "js/quietus.js" ],
       "matches": [ "*://*.thequietus.com/*" ]
+   } 
+    ,
+     {
+      "js": [  "js/tinymixtapes.js" ],
+      "matches": [ "*://*.tinymixtapes.com/*" ]
    }  
    ],
   "permissions": [
