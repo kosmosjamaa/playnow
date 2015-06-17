@@ -12,7 +12,8 @@
   "background": {
     "scripts": ["background.js"]
   },
-*/
+  */
+
    "content_scripts": [ 
    {
     "js": [ "js/jq.js", "js/shared.js" ],
@@ -56,7 +57,11 @@
      {
       "js": [  "js/rym.js" ],
       "matches": [ "*://*.rateyourmusic.com/*" ]
-   }  
+   }  ,
+     {
+      "js": [  "js/drownedinsound.js" ],
+      "matches": [ "*://*.drownedinsound.com/*" ]
+   }   
    ],
   "permissions": [
     "tabs"

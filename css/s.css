@@ -1,1 +1,2 @@
 .play-now__spotify{  font-size:10px; line-height: 1; display:inline-block !important; text-decoration: none !important; background:#648f00 !important; color:#fff !important; padding: 2px 0.3em !important; border-radius:3px; }
+.thisisboomkat .play-now__spotify{ position: relative; z-index:1000000; margin-top:-22px; margin-left:10px;}

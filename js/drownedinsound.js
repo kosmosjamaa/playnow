@@ -2,15 +2,16 @@ $(window).load(function() {
 	console.log("hello there");
 	
 
-	$(".actions").each(function(i){
+	
+	$(".release-title").each(function(i){
 		var albumgroup = [];
-		var m = $(this).closest(".data");
-		var album = encodeURIComponent($(m).find(".title").text().replace(':', ''));
-		var artist = encodeURIComponent($(m).find(".artist").text().replace(':', ''));
-		var btnbox = "adfi4dasdasd"+i;
-		$(m).addClass(btnbox );
-		$(m).addClass("thisisboomkat" );
+		var m = $(this);
+
+		var album = encodeURIComponent($.trim($(this).text()).replace(':', ''));
+		var artist = encodeURIComponent($.trim($(this).closest(".greatest-text").prev().find(".release-artist").text()).replace(':', ''));
 		
+		var btnbox = "adfi4dasdasd"+i;
+		$(m).addClass(btnbox);
 		albumgroup[0]=artist;
 		albumgroup[1]=album;
 		albumgroup[2]="."+btnbox;
@@ -25,9 +26,6 @@ $(window).load(function() {
 
 
 	
-
-	
-
 
 
 

@@ -28,5 +28,11 @@ function getData()
 		            }
 		        
 
+		    }).fail(function(){
+		    	console.log("mis nyyd")
+		    	counter++;		          
+		            if (counter < countertotal) {
+		            	getData();
+		            }
 		    });
 		}
