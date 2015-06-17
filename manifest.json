@@ -52,6 +52,10 @@
      {
       "js": [  "js/metacritic.js" ],
       "matches": [ "*://*.metacritic.com/browse/albums/*" ]
+   }  ,
+     {
+      "js": [  "js/rym.js" ],
+      "matches": [ "*://*.rateyourmusic.com/*" ]
    }  
    ],
   "permissions": [
