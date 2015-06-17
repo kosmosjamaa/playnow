@@ -48,6 +48,10 @@
      {
       "js": [  "js/tinymixtapes.js" ],
       "matches": [ "*://*.tinymixtapes.com/*" ]
+   } ,
+     {
+      "js": [  "js/metacritic.js" ],
+      "matches": [ "*://*.metacritic.com/browse/albums/*" ]
    }  
    ],
   "permissions": [
