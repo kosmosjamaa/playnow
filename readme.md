@@ -4,7 +4,7 @@ How does it work? Well, it's a browser (Chrome) plugin, that chekcs albums on th
 At the moment "works" with:
 
 <ul>
-	<li>Recordstores: <a href="http://boomkat.com/" target="_blank">Boomkat</a>, <a href="http://www.juno.co.uk/" target="_blank">Juno</a>, <a href="http://www.mimaroglumusic.com/" target="_blank">Mimaroglu</a>, <a href="http://www.aquariusrecords.org/" target="_blank">Aquarius</a></li>
+	<li>Record stores: <a href="http://boomkat.com/" target="_blank">Boomkat</a>, <a href="http://www.juno.co.uk/" target="_blank">Juno</a>, <a href="http://www.mimaroglumusic.com/" target="_blank">Mimaroglu</a>, <a href="http://www.aquariusrecords.org/" target="_blank">Aquarius</a></li>
 	<li>Webzines: <a href="http://www.tinymixtapes.com/" target="_blank">Tinymixtapes</a>, <a href="http://thequietus.com/" target="_blank">The Quietus</a>, <a href="http://drownedinsound.com/" target="_blank">Drowned In Sound</a></li>
 	<li>Databases: <a href="http://www.discogs.com/" target="_blank">Discogs</a>, <a href="http://www.metacritic.com/music" target="_blank">Metacritic</a>, <a href="http://www.metal-archives.com/" target="_blank">Metal Archives</a>, <a href="http://rateyourmusic.com/" target="_blank">Rate Your Music</a></li>
 </ul>	
