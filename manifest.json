@@ -44,23 +44,26 @@
      {
       "js": [  "js/quietus.js" ],
       "matches": [ "*://*.thequietus.com/*" ]
-   } 
-    ,
+   },
      {
       "js": [  "js/tinymixtapes.js" ],
       "matches": [ "*://*.tinymixtapes.com/*" ]
-   } ,
+   },
      {
       "js": [  "js/metacritic.js" ],
       "matches": [ "*://*.metacritic.com/browse/albums/*" ]
-   }  ,
+   },
      {
       "js": [  "js/rym.js" ],
       "matches": [ "*://*.rateyourmusic.com/*" ]
-   }  ,
+   },
      {
       "js": [  "js/drownedinsound.js" ],
       "matches": [ "*://*.drownedinsound.com/*" ]
+   },
+     {
+      "js": [  "js/mimaroglumusic.js" ],
+      "matches": [ "*://*.mimaroglumusic.com/*" ]
    }   
    ],
   "permissions": [
