@@ -10,7 +10,3 @@ At the moment "works" with:
 </ul>	
 
 
- <!-- todo
-http://www.residentadvisor.net/reviews.aspx?format=album
-Bleep
--->
