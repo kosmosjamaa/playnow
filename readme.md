@@ -1,5 +1,5 @@
 
-How does it work? Well, it's a browser (Chrome) plugin, that chekcs albums on the page and then injects spotify link if there is any. <br>
+How does it work? Well, it's a browser (Chrome) plugin, that looks albums on the page and injects spotify link if there is any. <br>
 
 At the moment "works" with:
 
