@@ -64,6 +64,10 @@
      {
       "js": [  "js/mimaroglumusic.js" ],
       "matches": [ "*://*.mimaroglumusic.com/*" ]
+   },
+     {
+      "js": [  "js/anost.js" ],
+      "matches": [ "*://*.anost.net/*" ]
    }   
    ],
   "permissions": [
