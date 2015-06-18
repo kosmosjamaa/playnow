@@ -6,7 +6,8 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png"
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
   },
   /*
   "background": {
@@ -22,54 +23,77 @@
   },
 
    {
-      "js": [ "js/boomkat.js" ],
+      "js": [ "js/sites/boomkat.js" ],
       "matches": [ "*://*.boomkat.com/*" ]
    } ,
    {
-      "js": [ "js/juno.js" ],
+      "js": [ "js/sites/juno.js" ],
       "matches": [ "*://*.juno.co.uk/*" ]
    } ,
    {
-      "js": [ "js/aq.js" ],
+      "js": [ "js/sites/aq.js" ],
       "matches": [ "*://*.aquariusrecords.org/*" ]
    } ,
      {
-      "js": [  "js/metal-archives.js" ],
+      "js": [  "js/sites/metal-archives.js" ],
       "matches": [ "*://*.metal-archives.com/*" ]
    },
      {
-      "js": [  "js/discogs.js" ],
+      "js": [  "js/sites/discogs.js" ],
       "matches": [ "*://*.discogs.com/*" ]
    } ,
      {
-      "js": [  "js/quietus.js" ],
+      "js": [  "js/sites/quietus.js" ],
       "matches": [ "*://*.thequietus.com/*" ]
    },
      {
-      "js": [  "js/tinymixtapes.js" ],
+      "js": [  "js/sites/tinymixtapes.js" ],
       "matches": [ "*://*.tinymixtapes.com/*" ]
    },
      {
-      "js": [  "js/metacritic.js" ],
+      "js": [  "js/sites/metacritic.js" ],
       "matches": [ "*://*.metacritic.com/browse/albums/*" ]
    },
      {
-      "js": [  "js/rym.js" ],
+      "js": [  "js/sites/rym.js" ],
       "matches": [ "*://*.rateyourmusic.com/*" ]
    },
      {
-      "js": [  "js/drownedinsound.js" ],
+      "js": [  "js/sites/drownedinsound.js" ],
       "matches": [ "*://*.drownedinsound.com/*" ]
    },
      {
-      "js": [  "js/mimaroglumusic.js" ],
+      "js": [  "js/sites/mimaroglumusic.js" ],
       "matches": [ "*://*.mimaroglumusic.com/*" ]
    },
      {
-      "js": [  "js/anost.js" ],
+      "js": [  "js/sites/anost.js" ],
       "matches": [ "*://*.anost.net/*" ]
-   }   
+   },
+     {
+      "js": [  "js/sites/norman.js" ],
+      "matches": [ "*://*.normanrecords.com/*" ]
+   } ,
+     {
+      "js": [  "js/sites/piccadilly.js" ],
+      "matches": [ "*://*.piccadillyrecords.com/*" ]
+   },
+     {
+      "js": [  "js/sites/experimedia.js" ],
+      "matches": [ "*://*.experimedia.net/*" ]
+   },
+     {
+      "js": [  "js/sites/forcedexposure.js" ],
+      "matches": [ "*://*.forcedexposure.com/*" ]
+   },
+     {
+      "js": [  "js/sites/bleep.js" ],
+      "matches": [ "*://*.bleep.com/*" ]
+   }
+
    ],
+
+
   "permissions": [
     "tabs"
     ]

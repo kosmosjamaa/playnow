@@ -3,9 +3,11 @@ var countertotal ;
 
 albumslist = [];
 
+
+
 function getData()
 		{
-				
+			$("#found-items").text("tere");	
 		    $.ajax({
 			    url:  "https://api.spotify.com/v1/search?q=album%3A"+albumslist[counter][1]+"+artist%3A"+albumslist[counter][0]+"&type=album",
 		        async: true,
@@ -29,7 +31,6 @@ function getData()
 		        
 
 		    }).fail(function(){
-		    	console.log("mis nyyd")
 		    	counter++;		          
 		            if (counter < countertotal) {
 		            	getData();
