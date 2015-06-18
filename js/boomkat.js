@@ -14,7 +14,9 @@ $(window).load(function() {
 			var album = encodeURIComponent($(m).find(".meta h4").next("p").text().replace(':', ''));
 		}
 		
-		$(m).addClass(btnbox);
+		$(m).addClass(btnbox );
+		$(m).addClass("thisisboomkat" );
+		
 		albumgroup[0]=artist;
 		albumgroup[1]=album;
 		albumgroup[2]="."+btnbox;
