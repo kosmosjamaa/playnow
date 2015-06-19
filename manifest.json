@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Play now button",
-  "description": "Adds play buttons to streaming stations",
+  "name": "Play now",
+  "description": "This extension adds a visible and easily accessible streaming link to music albums on selected webpages.",
   "version": "1.0",
 
   "browser_action": {
