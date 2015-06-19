@@ -9,12 +9,10 @@
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
-  /*
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["js/background.js"]
   },
-  */
-
+  
    "content_scripts": [ 
    {
     "js": [ "js/jq.js", "js/shared.js" ],

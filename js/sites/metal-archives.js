@@ -1,7 +1,4 @@
-$(window).load(function() {
-	console.log("hello there");
-	 
-
+$(document).ready(function() {
 
 	$(".discog tbody tr").each(function(i){
 		var albumgroup = [];
@@ -16,20 +13,8 @@ $(window).load(function() {
 		albumslist.push(albumgroup);
 	}).promise().done( function(){ 
 		countertotal = albumslist.length;
-		console.table(albumslist);
-
 		getData();
-		
 	 } );
-
-
-	
-
-
-		
-
-
-
 
 });	
 

@@ -1,12 +1,8 @@
-$(window).load(function() {
-	console.log("hello there");
-	
+$(document).ready(function() {
 
-	
 	$(".product, .product_row").each(function(i){
 		var albumgroup = [];
 		var m = $(this);
-
 		var album = encodeURIComponent($.trim($(m).find(".product_title a").text()).replace(':', ''));
 		var artistobj =  $(m).find(".product_artist").clone();
 		artistobj.find(".label").remove();
@@ -14,11 +10,9 @@ $(window).load(function() {
 		if(m.parent().hasClass('list_product_summaries')){
 			artistobjt = artistobjt.slice(2);
 		}
-		
-		
 		var artist = encodeURIComponent(artistobjt);
-		
 		var btnbox = "adfi4dasdasd"+i;
+
 		$(m).find("div.product_title").addClass(btnbox);
 		albumgroup[0]=artist;
 		albumgroup[1]=album;
@@ -26,16 +20,8 @@ $(window).load(function() {
 		albumslist.push(albumgroup);
 	}).promise().done( function(){ 
 		countertotal = albumslist.length;
-		
 		getData();
-		console.table(albumslist);
-
 	 } );
-
-
-	
-
-
 
 });	
 
