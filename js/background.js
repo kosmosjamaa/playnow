@@ -1,6 +1,6 @@
-chrome.browserAction.onClicked.addListener(function(tab) { });
+//chrome.browserAction.onClicked.addListener(function(tab) { });
 
-
+var links = "" ;
 
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
@@ -9,6 +9,28 @@ chrome.runtime.onMessage.addListener(
         path: request.newIconPath,
         tabId: sender.tab.id
     });
+
+	chrome.browserAction.setBadgeText({
+		text: request.foundtotal,
+		tabId: sender.tab.id
+	});
+
+    links =  links + request.foundlink;
+ 
+    
+
 });
+
+
+
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    if (request.greeting == "hello")
+      sendResponse({
+        msg: links
+
+      });
+  });
+
 
 

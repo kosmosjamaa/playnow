@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var m = $(this).closest("p");
 		var artist = encodeURIComponent($(m).find("b:first-of-type").text().replace(':', ''));
 		var album = encodeURIComponent($(m).find("b:first-of-type").next("img").next("b").text().replace(':', ''));
-		var btnbox = "adfi4dasdasd"+i;
+		var btnbox = "now-playing_"+ makeid() + "-"+i;
 	
 		$(m).find("input").before("<span class='"+btnbox+"'></span>");
 		albumgroup[0]=artist;

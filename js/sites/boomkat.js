@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var m = $(this).closest(".data");
 		var album = encodeURIComponent($(m).find(".title").text().replace(':', ''));
 		var artist = encodeURIComponent($(m).find(".artist").text().replace(':', ''));
-		var btnbox = "adfi4dasdasd"+i;
+		var btnbox = "now-playing_"+ makeid() + "-"+i;
 		/*
 		if( $(this).parent().hasClass("line")){
 			var m = $(this).closest(".line");

@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var m = $(this).closest('.disco_info');
 		var album = encodeURIComponent($.trim($(this).text()).replace(':', ''));
 		var artist = encodeURIComponent($.trim($(this).closest(".artist_left_col").find(".artist_name h1").text()).replace(':', ''));
-		var btnbox = "adfi4dasdasd"+i;
+		var btnbox = "now-playing_"+ makeid() + "-"+i;
 
 		$(m).find(".disco_mainline").addClass(btnbox);
 		albumgroup[0]=artist;

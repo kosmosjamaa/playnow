@@ -11,7 +11,7 @@ $(document).ready(function() {
 			artistobjt = artistobjt.slice(2);
 		}
 		var artist = encodeURIComponent(artistobjt);
-		var btnbox = "adfi4dasdasd"+i;
+		var btnbox = "now-playing_"+ makeid() + "-"+i;
 
 		$(m).find("div.product_title").addClass(btnbox);
 		albumgroup[0]=artist;

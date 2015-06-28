@@ -7,7 +7,7 @@ $(document).ready(function() {
 		var artist = encodeURIComponent(releasedata.substring(0,releasedata.indexOf(" - ")).replace(':', ''));
 		var albumdata = releasedata.substr(releasedata.indexOf(" - ") + 3);
 		var album = encodeURIComponent(albumdata.substring(0,albumdata.indexOf(" (")).replace(':', ''));		
-		var btnbox = "adfi4dasdasd"+i;
+		var btnbox = "now-playing_"+ makeid() + "-"+i;
 
 		$(m).addClass(btnbox);
 		albumgroup[0]=artist;

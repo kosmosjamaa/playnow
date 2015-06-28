@@ -6,7 +6,7 @@ $(document).ready(function() {
 		var releasedata = $.trim($(this).find(".wsite-com-category-product-name").text());
 		var album = encodeURIComponent(releasedata.substr(releasedata.indexOf(" - ") + 3).replace(':', ''));
 		var artist = encodeURIComponent(releasedata.substring(0,releasedata.indexOf(" - ")).replace(':', ''));		
-		var btnbox = "adfi4dasdasd"+i;
+		var btnbox = "now-playing_"+ makeid() + "-"+i;
 
 		$(m).find(".wsite-com-category-product-wrap").addClass(btnbox);
 		albumgroup[0]=artist;

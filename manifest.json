@@ -5,10 +5,7 @@
   "description": "This extension adds a visible and easily accessible streaming link to music albums on selected webpages.",
   "version": "1.0",
 
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
+ 
   "background": {
     "scripts": ["js/background.js"]
   },
@@ -90,7 +87,10 @@
    }
 
    ],
-
+ "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
 
   "permissions": [
     "tabs"

@@ -10,7 +10,7 @@ $(document).ready(function() {
 			var album = encodeURIComponent($(m).find(".sub").text().replace(':', ''));
 		}
 		var artist = encodeURIComponent(artistobj.text().replace(':', ''));
-		var btnbox = "adfi4dasdasd"+i;
+		var btnbox = "now-playing_"+ makeid() + "-"+i;
 
 		$(m).addClass(btnbox);
 		albumgroup[0]=artist;
