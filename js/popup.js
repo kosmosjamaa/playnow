@@ -1,32 +1,15 @@
-/*
-function morealbums() {
-  chrome.tabs.executeScript({
-    file: 'alert.js'
-  }); 
-}
- 
+getalbums();
 
 
-
-
-*/
-
-
-
-var links = chrome.extension.getBackgroundPage().links;  //get it back
-
-
-
-
-
- hello();
-
-function hello() {
+function getalbums() {
   console.log("hello");
   chrome.runtime.sendMessage({
       greeting: "hello"
     },
     function(response) {
-      document.getElementById("found-items").innerHTML = response.msg;
+ //   	console.log(response.msg);
+
+ 		 $("#found-items").html(response.msg);	
+ 	     //document.getElementById("found-items").innerHTML = response.msg;
     });
 }

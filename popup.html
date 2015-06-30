@@ -4,17 +4,23 @@
   <head>
     <title>Play now </title>
     <style>
-      body {
+      body { width:20em;
         font-family: sans-serif;
         font-size: 11px; padding:0; margin:0;
       }
-      ul{ list-style:none; padding:0; margin:1em; min-width:15em;}
+      ul{ list-style:none; padding:0; margin:1em; }
       li{ margin-bottom:0.5em;}
-      a{ color:rgb(17, 85, 204);}
+      a{ color:rgb(17, 85, 204); text-decoration:none;}
+       a:hover{ text-decoration:underline; color:purple;}
+      #found-items a:visited{  color:purple;}
       .btn{ border:none; background: none; padding:0.5em 1em; display: block; width:100%; outline:0; cursor:pointer;}
       hr{ margin:0;}
-      #found-items{ padding:0.5em; overflow:auto; max-height: 10em;}
-      #found-items a{ display:block; margin-bottom:0.5em; font-size:0.8em;}
+      #found-items{ overflow:auto; max-height: 10em; }
+      #found-items a{ display:block; margin-bottom:0.5em; margin-left:0.5em; margin-left:0.5em; font-size:0.8em; white-space:nowrap; overflow:hidden; text-overflow: ellipsis;}
+       #found-items a:first-child{ margin-top:0.5em; }
+      
+      
+
     </style>
 
    
@@ -23,11 +29,9 @@
  
   <body>
     
-    <a id="btn-makealbums" href="#" class="btn">Check again</a>
-    <hr>
+   <div id="found-items"></div>
+    
    
-    <div id="found-items"></div>
-    <hr>
     <ul>
       <li>Record stores: <a href="http://boomkat.com/" target="_blank">Boomkat</a>, <a href="http://Bleep.com/" target="_blank">Bleep</a>, <a href="http://www.juno.co.uk/" target="_blank">Juno</a>, <a href="http://www.mimaroglumusic.com/" target="_blank">Mimaroglu</a>, <a href="http://www.aquariusrecords.org/" target="_blank">Aquarius</a>, <a href="https://anost.net" target="_blank">Anost</a>, <a href="https://www.normanrecords.com" target="_blank">Norman</a>, <a href="http://www.piccadillyrecords.com/" target="_blank">Piccadilly</a>, <a href="http://experimedia.net/" target="_blank">Experimedia</a>, <a href="http://www.forcedexposure.com/" target="_blank">Forced Exposure</a></li>
       <li>Webzines: <a href="http://www.tinymixtapes.com/" target="_blank">Tinymixtapes</a>, <a href="http://thequietus.com/" target="_blank">The Quietus</a>, <a href="http://drownedinsound.com/" target="_blank">Drowned In Sound</a></li>

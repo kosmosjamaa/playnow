@@ -1,6 +1,6 @@
 //chrome.browserAction.onClicked.addListener(function(tab) { });
 
-var links = "" ;
+var links  ;
 
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
@@ -15,7 +15,9 @@ chrome.runtime.onMessage.addListener(
 		tabId: sender.tab.id
 	});
 
-    links =  links + request.foundlink;
+  links = request.foundlinks;
+  console.log(links);
+  //  links =  links + request.foundlink;
  
     
 
