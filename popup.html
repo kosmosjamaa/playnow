@@ -4,20 +4,22 @@
   <head>
     <title>Play now </title>
     <style>
-      body { width:20em;
+    	html{  padding:0; margin:0;}
+      body { width:20em; padding:0; margin:0; color:#111;
         font-family: sans-serif;
         font-size: 11px; padding:0; margin:0;
       }
-      ul{ list-style:none; padding:0; margin:1em; }
+      ul{ list-style:none; padding:0; margin:0.5rem; }
       li{ margin-bottom:0.5em;}
-      a{ color:rgb(17, 85, 204); text-decoration:none;}
-       a:hover{ text-decoration:underline; color:purple;}
-      #found-items a:visited{  color:purple;}
+      a{ color:#0074D9; text-decoration:none;}
+       a:hover{ text-decoration:underline; color:#FF4136 !important;}
+      #found-items a:visited{  color:#85144b;}
+      
       .btn{ border:none; background: none; padding:0.5em 1em; display: block; width:100%; outline:0; cursor:pointer;}
       hr{ margin:0;}
-      #found-items{ overflow:auto; max-height: 10em; }
-      #found-items a{ display:block; margin-bottom:0.5em; margin-left:0.5em; margin-left:0.5em; font-size:0.8em; white-space:nowrap; overflow:hidden; text-overflow: ellipsis;}
-       #found-items a:first-child{ margin-top:0.5em; }
+      #found-items{ overflow:auto; max-height: 20em;   }
+      #found-items a{ display:block; padding-bottom:0.5em; margin-left:0.5rem; margin-right:0.1rem; font-size:0.8em; white-space:nowrap; overflow:hidden; text-overflow: ellipsis; border-top:1px  solid #ddd; padding-top:0.5em;}
+       #found-items a:first-child{  }
       
       
 
@@ -29,7 +31,7 @@
  
   <body>
     
-   <div id="found-items"></div>
+   
     
    
     <ul>
@@ -37,6 +39,7 @@
       <li>Webzines: <a href="http://www.tinymixtapes.com/" target="_blank">Tinymixtapes</a>, <a href="http://thequietus.com/" target="_blank">The Quietus</a>, <a href="http://drownedinsound.com/" target="_blank">Drowned In Sound</a></li>
       <li>Databases: <a href="http://www.discogs.com/" target="_blank">Discogs</a>, <a href="http://www.metacritic.com/music" target="_blank">Metacritic</a>, <a href="http://www.metal-archives.com/" target="_blank">Metal Archives</a>, <a href="http://rateyourmusic.com/" target="_blank">Rate Your Music</a></li>
     </ul> 
+    <div id="found-items"></div>
 <script type="text/javascript" src="js/jq.js"></script>
  <script type="text/javascript" src="js/popup.js"></script>
   </body>
