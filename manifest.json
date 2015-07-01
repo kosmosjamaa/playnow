@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Play now",
-  "description": "This extension adds a visible and easily accessible streaming link to music albums on selected webpages.",
-  "version": "1.1",
+  "description": "This extension adds a visible and easily accessible streaming link to music albums on selected webpages. Spotify and Apple Music",
+  "version": "1.2",
 
  
   "background": {
