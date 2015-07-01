@@ -13,15 +13,19 @@
       li{ margin-bottom:0.5em;}
       a{ color:#0074D9; text-decoration:none;}
        a:hover{ text-decoration:underline; color:#FF4136 !important;}
-      #found-items a:visited{  color:#85144b;}
       
       .btn{ border:none; background: none; padding:0.5em 1em; display: block; width:100%; outline:0; cursor:pointer;}
       hr{ margin:0;}
-      #found-items{ overflow:auto; max-height: 20em;   }
-      #found-items a{ display:block; padding-bottom:0.5em; margin-left:0.5rem; margin-right:0.1rem; font-size:0.8em; white-space:nowrap; overflow:hidden; text-overflow: ellipsis; border-top:1px  solid #ddd; padding-top:0.5em;}
-       #found-items a:first-child{  }
-      
-      
+      #found-items{ overflow:auto; margin:0; max-height: 20em;   }
+      #found-items span{  overflow:hidden; text-overflow: ellipsis; }
+       #found-items li{ white-space: nowrap; padding-bottom:0; margin-left:0.5rem; margin-right:0.1rem; font-size:0.8em; white-space:nowrap; border-top:1px  solid #ddd; padding-top:0.25em; }
+      #found-items li span, #found-items li a{ display:inline-block; vertical-align: middle;}
+      .artist-name{ width:8em; }
+      .album-title{ width:9em; }
+      .artist-name{ margin-right: 0.5em;}
+      .btn-s, .btn-a{  margin:0 0.25em; padding:0.5em; }
+      .btn-s{ background-color:#648f00;  color:#fff;}
+      .btn-a{ background-color:#298cda; color:#fff; }
 
     </style>
 
@@ -39,7 +43,7 @@
       <li>Webzines: <a href="http://www.tinymixtapes.com/" target="_blank">Tinymixtapes</a>, <a href="http://thequietus.com/" target="_blank">The Quietus</a>, <a href="http://drownedinsound.com/" target="_blank">Drowned In Sound</a></li>
       <li>Databases: <a href="http://www.discogs.com/" target="_blank">Discogs</a>, <a href="http://www.metacritic.com/music" target="_blank">Metacritic</a>, <a href="http://www.metal-archives.com/" target="_blank">Metal Archives</a>, <a href="http://rateyourmusic.com/" target="_blank">Rate Your Music</a></li>
     </ul> 
-    <div id="found-items"></div>
+    <ul id="found-items"></ul>
 <script type="text/javascript" src="js/jq.js"></script>
  <script type="text/javascript" src="js/popup.js"></script>
   </body>

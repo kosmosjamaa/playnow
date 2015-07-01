@@ -16,7 +16,7 @@ chrome.runtime.onMessage.addListener(
 	});
 
   links = request.foundlinks;
-  console.log(links);
+  console.log(request);
   //  links =  links + request.foundlink;
  
     
