@@ -51,14 +51,17 @@ function getDataSpotify()
 		    }).done(function(response){
 		        	try{
 		        		albumslist[counter][3] = response.albums.items[0].external_urls.spotify;
-		        		$(albumslist[counter][2]).append(" <a href="+response.albums.items[0].external_urls.spotify+" title='"+ response.albums.items[0].name +"' class='play-now__btn play-now__spotify' target='_blank'>spotify</a> ");
+		        		$(albumslist[counter][2]).append(" <a href="+response.albums.items[0].uri+" title='"+ response.albums.items[0].name +"' class='play-now__btn play-now__spotify' >spotify</a> ");
+		        		//$(albumslist[counter][2]).append(" <a href="+response.albums.items[0].external_urls.spotify+" title='"+ response.albums.items[0].name +"' class='play-now__btn play-now__spotify' target='_blank'>spotify</a> ");
+		        		albumslist[counter][5] = "response.albums.items[0].uri";
 		        		founditems++;
 		        		chrome.runtime.sendMessage({ foundtotal : founditems.toString(), foundlinks : albumslist  });
 		        		
 		        		
 		        	}catch(e){
 					    if(e){
-					    	albumslist[counter][3] = "";	
+					    	albumslist[counter][3] = "";
+					    	albumslist[counter][5] = "";	
 					    //	console.log("no album")
 					    }
 				    }

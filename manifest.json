@@ -36,6 +36,10 @@
      {
       "js": [  "js/sites/discogs.js" ],
       "matches": [ "*://*.discogs.com/*" ]
+   },
+     {
+      "js": [  "js/sites/ra.js" ],
+      "matches": [ "*://*.residentadvisor.net/*" ]
    } ,
      {
       "js": [  "js/sites/quietus.js" ],

@@ -1,4 +1,4 @@
-  .play-now__btn{  font-size:10px; line-height: 1; display:inline-block !important; text-decoration: none !important; background:#648f00 !important; color:#fff !important; padding: 2px 0.3em !important; border-radius:3px; }
+  .play-now__btn{  font-size:10px; line-height: 1; display:inline-block !important; text-decoration: none !important; background:#648f00 !important; color:#fff !important; padding: 2px 0.3em !important; border-radius:3px; width:auto !important; }
 
  .play-now__spotify{ background:#648f00 !important; color:#fff !important;}
 

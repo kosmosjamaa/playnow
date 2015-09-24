@@ -1,17 +1,13 @@
 $(document).ready(function() {
 
-	$(".actions").each(function(i){
+	$(".release__title").each(function(i){
 		var albumgroup = [];
-		var m = $(this).closest(".data");
-		var album = encodeURIComponent($(m).find(".title").text().replace(':', ''));
-		var artist = encodeURIComponent($(m).find(".artist").text().replace(':', ''));
+		var t = $(this);
+		var m = $(this).closest(".product_item");
+		var album = encodeURIComponent($.trim($(t).text().replace(':', '')));
+		var artist = encodeURIComponent($.trim($(m).find(".release__artist").text().replace(':', '')));
 		var btnbox = "now-playing_"+ makeid() + "-"+i;
-		/*
-		if( $(this).parent().hasClass("line")){
-			var m = $(this).closest(".line");
-			var artist = encodeURIComponent($(m).find(".meta h4").text().replace(':', ''));
-			var album = encodeURIComponent($(m).find(".meta h4").next("p").text().replace(':', ''));
-		}*/
+		
 		
 		$(m).addClass(btnbox );
 		$(m).addClass("thisisboomkat" );
@@ -22,6 +18,7 @@ $(document).ready(function() {
 		albumslist.push(albumgroup);
 	}).promise().done( function(){ 
 		countertotal = albumslist.length;
+		//console.table(albumslist);
 		getData();
 	 } );
 
