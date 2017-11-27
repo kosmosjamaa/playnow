@@ -1,10 +1,19 @@
 $(document).ready(function() {
 
-	$("#music-reviews .item,  .music-reviews .item").each(function(i){
+	$(".entry--musicreview,  .tile--musicreview").each(function(i){
 		var albumgroup = [];
-		var m = $(this);
-		var album = encodeURIComponent($(m).find(".item-subtitle").text().replace(':', ''));
-		var artist = encodeURIComponent($(m).find(".item-title").text().replace(':', ''));
+		var t = $(this);
+		if(t.hasClass(".entry--musicreview")){
+				var m = $(this).find(".review-heading__details");
+			var album = encodeURIComponent($(t).find(".entry__main-title").text().replace(':', ''));
+			var artist = encodeURIComponent($(t).find(".entry__subtitle").text().replace(':', ''));
+
+		}
+		else{
+			var m = $(this).find(".byline");
+			var album = encodeURIComponent($(t).find(".tile__album").text().replace(':', ''));
+			var artist = encodeURIComponent($(t).find(".tile__artist").text().replace(':', ''));
+		}	
 		var btnbox = "now-playing_"+ makeid() + "-"+i;
 
 		$(m).addClass(btnbox);
