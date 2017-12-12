@@ -18,6 +18,22 @@ function makeid()
     return text;
 }
 
+var spotify_token_type ="Bearer";
+var spotify_token ="BQBI-n90OrEPVHbgIrltck8YWW2NI2Yw59GfIhOjWNXRMF7Yz5kVN__PqNin9gHvjyRXbt-AIsvYQZof8IE";
+
+
+function spotifyAuth(){
+	$.ajax({
+			  dataType: "json",
+		  url: "https://kodukokad.ee/rain/spotify.php"
+		 }).done(function(response){
+			spotify_token_type=response.token_type;
+			spotify_token=response.access_token;
+		});
+}
+
+spotifyAuth();
+
 
 function getData(){
 	getDataSpotify();
@@ -36,6 +52,8 @@ chrome.runtime.onMessage.addListener(
 });
 
 
+
+
 function getDataSpotify()
 		{
 			
@@ -43,10 +61,15 @@ function getDataSpotify()
 				chrome.runtime.sendMessage({ "newIconPath" : "icon-loading.png" });
 			}
 			
-
+			
+			var token = spotify_token_type+" "+ spotify_token;
+			
 		    $.ajax({
 			    url:  "https://api.spotify.com/v1/search?q=album%3A"+albumslist[counter][1]+"+artist%3A"+albumslist[counter][0]+"&type=album",
 		        async: true,
+		        headers: {
+					"Authorization": token
+				},
 		        dataType: 'json'
 		    }).done(function(response){
 		        	try{
